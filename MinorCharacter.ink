@@ -2,6 +2,10 @@ INCLUDE Scene1
 INCLUDE Scene2
 INCLUDE Scene3
 INCLUDE Scene4
+INCLUDE Scene5
+INCLUDE Scene6
+INCLUDE Scene7
+INCLUDE Scene8
 
 start
 
