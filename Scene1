@@ -1,3 +1,139 @@
 === Scene_1 ===
-1
+The Hero was the first to show up with a party of what looked like adventurers
+
+We both waved as he got closer to be stall  
+
+“What have you got today?”
+
+I told the hero took see for himself with his party patiently waiting behind him
+
+Gold: 1000
+
+Magic Gem: ???
+Long Sword: 30
+Short Sword: 20
+Heavy Armor: 50
+Light Armor: 30 
+Bow and 10 arrows: 40 
+10 healing potions: 10 each 
+5 Antidotes: 15 each 
+Dagger of Fire: 80
+Staff of Blizzards: 100
+Scroll of Binding: 60
+Recipe book of local food: 20 
+Crest of Tenby: 15
+
+“I would like 4 of your healing potions and the light armor for my friend here for our dungeon exploration”
+
+I reminded him that each item needed to be bought separately 
+
+“Ah right, so let's start with the potions”
+
+*[Sell]
+-> Sell1
+*[Haggle]
+-> Haggle1
+*[Don’t sell]
+->DontSell1
+
+=== Sell1 ===
+“Sure here you go”
+~ Healing = Healing - 3
+~ HeroRela = HeroRela + 1
+~ Gold = Gold + 30
+
+->Continue
+=== Haggle1 ===
+"Would you be willing to buy for a little more, im worried my business will be more slow than usual today?”
+
+“15 each then, fine with me since you have done good business with me in the past”
+
+~ Healing = Healing - 3
+~ HeroRela = HeroRela - 1
+~ Gold = Gold + 45
+->Continue
+
+=== DontSell1 ===
+“I think I might save these for someone else who needs them more, sorry”
+
+“I really needed those too, hopefully, we won’t get hurt by anything”
+
+~ HeroRela = HeroRela - 2
+->ContinueExtra
+
+=== Continue ===
+
+“So the light armor was the other one”
+-> Market
+
+=== ContinueExtra ===
+“Can you at least sell me the light armor?”
+->Market
+
+=== Market ===
+*[Sell]
+-> Sell2
+*[Haggle]
+-> Haggle2
+*[Don’t sell]
+->DontSell2
+
+
+=== Sell2 ===
+“Put it to good use”
+~ Inventory = Inventory - LightArmor
+~ Gold = Gold + 30
+~ HeroRela = HeroRela + 1
+
+“Thanks”
+
+->EndScene
+
+=== Haggle2 ===
+“The price unfortunately just went up for that item to 50”
+
+“Well what can you do about that, lots of people must need armor these days”
+
+~ Inventory = Inventory - LightArmor
+~ Gold = Gold + 50
+~ HeroRela = HeroRela - 1
+->EndScene
+
+===DontSell2 ===
+
+“That item is on hold for another customer at the moment, im sure you will find one on your enemies” 
+
+“Well that is unfortunate”
+
+~ HeroRela = HeroRela - 2
+->EndScene
+
+=== EndScene ===
+
+{
+-HeroRela >= 12 : “The items you have are always a great price, I will be seeing you again soon”
+}
+
+{
+-HeroRela == 10 : "Sad to hear that market prices are rising with demand for the items, I hope I can come again when the prices are back to normal”
+}
+
+{
+-HeroRela <= 9 : “At least I got one of the items I came for and wasn't quick enough to get the other, you better promise to sell me the items I require next time or else”
+}
+
+{
+-HeroRela <= 6 : “Im sorry to hear we couldn't come to an agreement over such simple items, next time I am here we will require a small chat”
+}
+
+{
+-HeroRela <= 9 : “See you next time very, very soon”
+}
+
+{
+-HeroRela > 9 : “Hope you have great business today and thanks again” 
+}
+
+I watch him and his party walk away toward another dungeon full of enemies and treasure and most likely will come back with their findings 
+
 -> MainLoop
