@@ -103,13 +103,15 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 //Bad Villan
 }
 {
--TownRela >= 10:
-//Town Happy
-}
-{
 -TownRela >= -5:
 //TownDestroyed
 }
+{
+- HaveMythicalRing == 1:
+//RingEnding
+}
+
+//Town is happy, If Town is not destoryed/Hero corrupt/Villain win
 //Has Cursed Weapon
 //Amount of Gold left (leave for rich life or be stall manager or no gold means bankrupt)
 //Magic Gem will lead to VillanBad
