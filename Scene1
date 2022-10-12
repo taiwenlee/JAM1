@@ -112,18 +112,26 @@ I reminded him that each item needed to be bought separately
 
 {
 -HeroRela >= 12 : “The items you have are always a great price, I will be seeing you again soon”
+
+~TownRela = TownRela + 3
 }
 
 {
 -HeroRela == 10 : "Sad to hear that market prices are rising with demand for the items, I hope I can come again when the prices are back to normal”
+
+~TownRela = TownRela + 1
 }
 
 {
 -HeroRela <= 9 : “At least I got one of the items I came for and wasn't quick enough to get the other, you better promise to sell me the items I require next time or else”
+
+~TownRela = TownRela - 2
 }
 
 {
 -HeroRela <= 6 : “Im sorry to hear we couldn't come to an agreement over such simple items, next time I am here we will require a small chat”
+
+~TownRela = TownRela - 4
 }
 
 {
