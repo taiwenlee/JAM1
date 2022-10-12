@@ -1,3 +1,52 @@
-=== Scene_5 ===
-5
--> MainLoop
+VAR Scene = 0
+VAR HeroRela = 15
+VAR AnatgonistRela = 0
+VAR HaveCursedSword = 1
+
+LIST AllItems = CursedSword, LongSword, Gem, Staff, Potion, MythicalRing
+LIST Inventory = None, LongSword
+
+->Scene5
+
+=== Scene5 ===
+It is early in the morning, I wake up from a shiver. “Today is the day, It’s time to restock my inventory. Hope everything goes well.” I mumble. I quickly get up, have a quick breakfast, and head outside.
+The plan for today is to explore an ancient castle ruin that has existed for hundreds of years. It is said it was the capital of a prosperous kingdom centuries ago, but was later destroyed and conquered by demonic monsters. There’s been countless rumors about adventurers finding legendary relics and artifacts from the ruin. However there’s just as many rumors, if not more, about the danger and mystery it possessed. Even so, it is irresistible for a trader like me to not explore the ruin.
+After a few hours of journey, I finally arrived at the ancient castle ruin. It is much bigger than I expected, crumbled and lifeless as well. I look around and find an entrance to the inside. Shattered walls, fallen pillars, cracked floor, and overflowing veins is what I see as I move forward.
+“It’s like a maze in here, I have to leave marks on the way I was from.” As I’m zig-zagging through the corridors to find lost relics, I find a hold that seems to lead somewhere below. I feel a cold breeze from the hole as well as a sense of danger. “Should I hop in or should I continue down the corridor?”
+    * “It seems too dangerous. I’ll leave it alone for now.”
+        I’m not willing to take the risk since I’m not trained for battles like the adventurers. I turn around and keep walking down the corridor. Soon after, a well-worn and half decayed wooden door catches my attention. It seems no one has yet to open it because of its look. I decide to check out what’s inside.
+	        Right after I open the door, I see an old rusty chest in the corner and nothing else. Immediately, I run up to it and open.
+	        There’s nothing inside. “What a joke.” I slam the chest close as the immense disappointment hits me in the face.
+	        ->Conclusion
+    * “Why not.”
+        I shrug and jump into the hole. Shortly after a moment of weightlessness, I hit the ground and stand on my feet. It is pitch black down here, so I take out my torch. The light is enough for me to check my surroundings. I’m in an enormous room with walls and floor made of black stones, and there is an altar in the middle with an item on it that seems extremely valuable just from the looks. The only problem is that there is a gargoyle beside the altar and it seems to be awakened.
+            {
+            - AnatgonistRela >= 10:
+                I know I have no chance against the gargoyle and start to think this is the end of me. All of a sudden, a familiar figure appears in front of me. “Drekalynch Crawforanic!” “Seems like you got yourself into trouble, Shmoore.” Drekalynch says as they slay the gargoyle with ease. “I just saved your life and as a payback, I’ll take this ring from the altar.”
+                
+                    * “No you can’t take it from me, I found it first!”
+                    I yell. Drekalynch frowns and seems to be out of patience. “Is this who you really are, just the same as everyone else? Greedy and despicable.” Drekalynch’s words linger around me as they disappear.
+                        ~ Inventory += MythicalRing
+                        ~ AnatgonistRela -= 6
+                        ->Conclusion
+                    * “Sure, it’s all yours. You saved me afterall.”
+                    I say, even though I really want that ring. Drekalynch smiles and takes the ring. “Thanks, I’ll see you again sometime.”
+                        ~ AnatgonistRela += 5
+                        ->Conclusion
+            - HeroRela >= 15:
+                I know I have no chance against the gargoyle and start to think this is the end of me. All of a sudden, a familiar figure appears in front of me. “Elrris!” “Seems like you got yourself into trouble, Shmoore.” Elrris says as they slay the gargoyle with ease. “Thanks Elrris, you saved my life. I own you one.” “Just remember to give me a discount next time.” Elrris laughs as he exits through the hole above.
+                    ~ Inventory += MythicalRing
+                    ->Conclusion
+            - HaveCursedSword == 1:
+                Just as I thought I’m a dead man, the cursed weapon I bought from the suspicious dealer appears in front of me and swings at the gargoyle on its own. It kills the gargoyle for some unknown reason and disappears again. “Well, that just happened I guess.” I shrug and take the ring.
+                    ~ Inventory += MythicalRing
+                    ->Conclusion
+            - else:
+                I stand no chance against the gargoyle. It violently punches me onto the wall a few times as I try to escape through the hole. After a few attempts, I finally climb out of the hole and escape wounded.
+                    ->Conclusion
+            }
+    
+
+=== Conclusion == 
+The outside is getting dark, so I decide to head back to the town and rest for the night.
+-> END
