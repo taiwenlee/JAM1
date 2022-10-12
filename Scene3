@@ -1,3 +1,56 @@
 === Scene_3 ===
-3
--> MainLoop
+I am standing in my stall calculating my inventory and what needs to be restocked. Suddenly, I notice a tall hooded man walk towards my stall and start looking at the swords.
+
+The man is wearing all black clothing and has a mask on. I can only see his bright blue eyes. After looking around for some time, he starts shaking his head and asks me:
+
+"Why is your sword inventory so small? I am looking to buy a new sword that is crafted with the best material and can fulfill my needs."
+
+"Hi, let me show you some swords that I have placed in the back. I am sure you will be impressed by these swords."
+
+"I hope so because I do not like it when people waste my time."
+
+*[Walk to the back] ->Part2
+
+=== Part2 === 
+I start walking towards the back to grab the swords and can't stop thinking about why this masked man wants such a high quality sword. I grab the swords and start walking back towards him.
+
+*[Show the swords]
+
+"These swords are some of the best I have in my shop. They all are high quality and will last forever."
+
+The masked man starts looking at the swords and does not seem impressed. He shakes his head in disapproval.
+
+"All of these swords are horrible! They are not what I am looking for. Show me something else."
+
+I am shocked that this man does not like the swords because these are some of the best swords in town. I do not know what else I can show him. ->Part3
+
+=== Part3 === 
+*[Confused]
+
+"These swords are some of the best I have. I do not have any other swords that will impress you."
+
+The masked man is not happy and starts walking away from my stall. However, as he is walking out, he notices an old sword laying behind my chair. He starts walking back and asks:
+
+"Is that sword behind your chair for sale?"
+
+I look at the sword and start wondering why he is interested in that sword. That sword has been laying behind my chair for years now and is very old.
+
+"Yes it is, but that sword is very old. I am not sure you will like it."
+
+"Do not worry, I will like it. I would like to buy that sword."
+
+I start feeling suspicious and wonder why this man wants such a old sword. However, I decide that I will sell him the sword because I have no use for it.
+
+"Sure. The price will be 40 gold."
+
+Gold += LongSword
+
+"Okay, here you go." ->End_Scene
+
+=== End_Scene ===
+
+*[Take the gold and hand over sword]
+
+The masked man grabs the sword and leaves the stall. I continue to wonder why he wanted to buy that sword.
+
+->MainLoop

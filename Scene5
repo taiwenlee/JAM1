@@ -1,4 +1,3 @@
-VAR Scene = 0
 VAR HeroRela = 15
 VAR AnatgonistRela = 0
 VAR HaveCursedSword = 1
