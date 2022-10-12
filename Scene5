@@ -11,25 +11,25 @@ After a few hours of journey, I finally arrived at the ancient castle ruin. It i
     * “Why not.”
         I shrug and jump into the hole. Shortly after a moment of weightlessness, I hit the ground and stand on my feet. It is pitch black down here, so I take out my torch. The light is enough for me to check my surroundings. I’m in an enormous room with walls and floor made of black stones, and there is an altar in the middle with an item on it that seems extremely valuable just from the looks. The only problem is that there is a gargoyle beside the altar and it seems to be awakened.
             {
-            - AnatgonistRela >= 10:
+            - AntagonistRela >= 10:
                 I know I have no chance against the gargoyle and start to think this is the end of me. All of a sudden, a familiar figure appears in front of me. “Drekalynch Crawforanic!” “Seems like you got yourself into trouble, Shmoore.” Drekalynch says as they slay the gargoyle with ease. “I just saved your life and as a payback, I’ll take this ring from the altar.”
                 
                     * “No you can’t take it from me, I found it first!”
                     I yell. Drekalynch frowns and seems to be out of patience. “Is this who you really are, just the same as everyone else? Greedy and despicable.” Drekalynch’s words linger around me as they disappear.
-                        ~ HaveMythicalRing = 1
-                        ~ AnatgonistRela -= 6
+                        ~ Inventory += MythicalRing
+                        ~ AntagonistRela -= 6
                         ->Conclusion5
                     * “Sure, it’s all yours. You saved me afterall.”
                     I say, even though I really want that ring. Drekalynch smiles and takes the ring. “Thanks, I’ll see you again sometime.”
-                        ~ AnatgonistRela += 5
+                        ~ AntagonistRela += 5
                         ->Conclusion5
             - HeroRela >= 15:
                 I know I have no chance against the gargoyle and start to think this is the end of me. All of a sudden, a familiar figure appears in front of me. “Elrris!” “Seems like you got yourself into trouble, Shmoore.” Elrris says as they slay the gargoyle with ease. “Thanks Elrris, you saved my life. I own you one.” “Just remember to give me a discount next time.” Elrris laughs as he exits through the hole above.
-                    ~ HaveMythicalRing = 1
+                    ~ Inventory += MythicalRing
                     ->Conclusion5
             - HaveCursedSword == 1:
                 Just as I thought I’m a dead man, the cursed weapon I bought from the suspicious dealer appears in front of me and swings at the gargoyle on its own. It kills the gargoyle for some unknown reason and disappears again. “Well, that just happened I guess.” I shrug and take the ring.
-                    ~ HaveMythicalRing = 1
+                    ~ Inventory += MythicalRing
                     ->Conclusion5
             - else:
                 I stand no chance against the gargoyle. It violently punches me onto the wall a few times as I try to escape through the hole. After a few attempts, I finally climb out of the hole and escape wounded.
