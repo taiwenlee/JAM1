@@ -10,7 +10,7 @@ INCLUDE Scene8
 VAR Scene = 0
 VAR Gold = 1000
 VAR HeroRela = 10 //max +-20
-VAR AnatgonistRela = 0 //max +-20
+VAR AntagonistRela = 0 //max +-20
 VAR TownRela = 0 //max = +-20
 VAR Healing = 10
 VAR Antidi = 5
@@ -95,11 +95,11 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 //Bad Hero
 }
 {
--AnatgonistRela >= 12:
+-AntagonistRela >= 12:
 //Good Villan
 }
 {
--AnatgonistRela <= 0:
+-AntagonistRela <= 0:
 //Bad Villan
 }
 {
@@ -108,11 +108,12 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 }
 {
 -TownRela >= -5:
-//TownDestoryed
+//TownDestroyed
 }
 //Has Cursed Weapon
 //Amount of Gold left (leave for rich life or be stall manager or no gold means bankrupt)
 //Magic Gem will lead to VillanBad
 //Salt will lead to ending
+//List items you have left
     -> END
 
