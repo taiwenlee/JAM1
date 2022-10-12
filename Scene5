@@ -16,7 +16,7 @@ After a few hours of journey, I finally arrived at the ancient castle ruin. It i
                 
                     * “No you can’t take it from me, I found it first!”
                     I yell. Drekalynch frowns and seems to be out of patience. “Is this who you really are, just the same as everyone else? Greedy and despicable.” Drekalynch’s words linger around me as they disappear.
-                        ~ HaveMythicalRing = 1
+                        ~ Inventory += MythicalRing
                         ~ AntagonistRela -= 6
                         ->Conclusion5
                     * “Sure, it’s all yours. You saved me afterall.”
@@ -25,11 +25,11 @@ After a few hours of journey, I finally arrived at the ancient castle ruin. It i
                         ->Conclusion5
             - HeroRela >= 15:
                 I know I have no chance against the gargoyle and start to think this is the end of me. All of a sudden, a familiar figure appears in front of me. “Elrris!” “Seems like you got yourself into trouble, Shmoore.” Elrris says as they slay the gargoyle with ease. “Thanks Elrris, you saved my life. I own you one.” “Just remember to give me a discount next time.” Elrris laughs as he exits through the hole above.
-                    ~ HaveMythicalRing = 1
+                    ~ Inventory += MythicalRing
                     ->Conclusion5
             - HaveCursedSword == 1:
                 Just as I thought I’m a dead man, the cursed weapon I bought from the suspicious dealer appears in front of me and swings at the gargoyle on its own. It kills the gargoyle for some unknown reason and disappears again. “Well, that just happened I guess.” I shrug and take the ring.
-                    ~ HaveMythicalRing = 1
+                    ~ Inventory += MythicalRing
                     ->Conclusion5
             - else:
                 I stand no chance against the gargoyle. It violently punches me onto the wall a few times as I try to escape through the hole. After a few attempts, I finally climb out of the hole and escape wounded.
