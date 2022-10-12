@@ -5,6 +5,7 @@ After opening up my shop for a couple of minutes, a large fellow comes by with a
 VAR CheckPurch = false
 ~temp cost = RANDOM(27,33)
 The first item on the table was a long sword. The blacksmith wanted to sell it for {cost} gold.
+I have {Gold} gold.
 *{Gold >= cost}[Buy]
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
@@ -19,6 +20,7 @@ The first item on the table was a long sword. The blacksmith wanted to sell it f
 The blacksmith moved on to the next item.
 ~temp cost = RANDOM(18,22)
 The second item on the table was a short sword. The blacksmith wanted to sell it for {cost} gold.
+I have {Gold} gold.
 *{Gold >= cost}Buy
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
@@ -33,6 +35,7 @@ The second item on the table was a short sword. The blacksmith wanted to sell it
 The blacksmith moved on to the next item.
 ~temp cost = RANDOM(27,33)
 The first item on the table wa heavy armor. The blacksmith wanted to sell it for {cost} gold.
+I have {Gold} gold.
 *{Gold >= cost}Buy
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
