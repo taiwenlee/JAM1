@@ -1,4 +1,4 @@
-== Scene7 ==
+== Scene_7 ==
 I am busy checking on the items I've got left at my shop when I look out the door and at the scenery in front of me. It looks so peaceful out there...
 
 I soon get snapped out of my gaze by the sounds of some footsteps.
@@ -73,7 +73,7 @@ Elriss sighs in defeat. "Alright, I don't have time to deal with you. I'll be on
 
 "Thank you, Shmoore," the townperson tells me, a grateful tone in his voice as the group of people he had with him come inside the shop, some of them helping me with closing and locking up the shop.
 
-~TownRela = Townrela + 5
+~TownRela = TownRela + 5
 
 -> MainLoop
 
@@ -90,6 +90,6 @@ That is true, ordinary townspeople aren't necessarily trained to fight monsters.
 ==ConfirmRefusal
 "I'm sorry, but I need to get things locked up," I flatly say as I turn around and, going back into my shop, close and lock the door.
 
-~Townrela = TownRela - 5
+~TownRela = TownRela - 5
 
 -> MainLoop
