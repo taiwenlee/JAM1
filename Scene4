@@ -2,8 +2,6 @@
 4 
 
 
-LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
-
 Everything was in place, my prices for almost all of the items I had today were on display so I stood patiently in my stand for some eager customers to come by. Though instead of one or two people approaching, it came to me as a surprise when I saw a large group approach my shop. 
 
 Upon further inspection I had a sneaking suspicion that they weren’t the most friendly of faces around here. A couple of them carried horrid weapons upon their backs, but all had relatively the same outfit on. 
@@ -33,7 +31,7 @@ They look intently at the Magic Gem.
     I gasped as they started to jump over and into my shop, ransacking every corner for the gold I kept. I didn’t have the guts to fight them off but held tightly onto what they so desired. It took them only a few minutes until my place was robbed of the gold I worked really hard to earn.
     
     ~Inventory-=gold
-    ->END
+    ->MainLoop
 
 *[Haggle]
     “Earnings have been a little low as of late, are you willing to pay a little more for this item?” I asked.
@@ -81,7 +79,7 @@ They look intently at the Magic Gem.
     Their main man went through his pockets, which seemed to take a while for some reason. Suddenly, a weapon was drawn instead pointing at my face. It was a trap! 
 
     I jumped back in defense, covering my face in fear as the group jumped over into my shop, rummaging through the many items I held. They went through it for quite some time, their footsteps now being heard jumping back outside and running away. I opened my eyes to see that the Scroll of Binding was stolen! Those rats! I sighed heavily, dusting myself off and started to rearrange all my items, hoping that the next customer won't rob me of my items.
-    ->END
+    ->MainLoop
   
 ->MainLoop
 
