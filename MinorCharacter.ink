@@ -115,5 +115,5 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 //Magic Gem will lead to VillanBad
 //Salt will lead to ending
 //List items you have left
-    -> END
+-> END
 
