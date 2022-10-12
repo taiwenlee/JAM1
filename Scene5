@@ -1,9 +1,7 @@
-VAR HeroRela = 15
-VAR AnatgonistRela = 0
-VAR HaveCursedSword = 1
 
-LIST AllItems = CursedSword, LongSword, Gem, Staff, Potion, MythicalRing
-LIST Inventory = None, LongSword
+
+
+
 
 ->Scene5
 
