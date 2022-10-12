@@ -1,3 +1,86 @@
-=== Scene_7 ===
-7
--> MainLoop
+== Scene7 ==
+I am busy checking on the items I've got left at my shop when I look out the door and at the scenery in front of me. It looks so peaceful out there...
+
+I soon get snapped out of my gaze by the sounds of some footsteps.
+
+*[I look to my left.] -> CheckLeft
+*[I look to my right.] -> CheckRight
+
+==CheckLeft
+I poke my head out and look to my left, seeing Elriss the Hero coming towards my shop.
+
+"Hello, hero," I say to Elriss as the Hero reaches my stall. "What can I do for you today?"
+
+"I've got an emergency to handle, trader," Elriss tells me. "There is a goblin attack at the outskirts of the town, and I require some materials from you before I get to them. Are you willing to sell?"
+
+I think about it a bit.
+
+*"What do you need?" I ask. -> AskNeeds
+*"Are you sure you don't already have what you need?" I ask. -> QuestionHero
+*"Sorry, I can't really help you," I tell the Hero. -> RefuseNeed
+
+==CheckRight
+I poke my head out and look to my right, seeing a crowd of people coming towards the shop. Some look to be rather ragged, as if they had to flee from somewhere quickly.
+
+"Excuse me?" one of them, an older-looking man says as he approaches me. "A band of goblins managed to get into the outskirts of the town, and while the guards are doing their best to fight them off we've had a few casualties. We were hoping you could provide some shelter for us."
+
+Some shelter? I'm not sure if that's a great idea given it's goblins attacking, but I was planning on locking my shop up since the townsperson told me about the situation.
+
+What to do, though...?
+
+*[Offer to give them shelter.] -> ShelterPeople
+*[Refuse shelter.] -> RefusePeople
+
+==AskNeeds
+"What do you need?" I ask.
+
+Elriss gives me a small list of things required for helping the guards. I nod in understanding and grab what was requested, soon giving them to the Hero before thesaid Hero thanks me and leaves, me taking time to close and lock up my shop in case the goblins managed to reach my area.
+
+-> DONE
+
+==QuestionHero
+"Are you sure you don't already have what you need?" I ask.
+
+"I wish I could say yes, but I used most of the supplies I need on a previous adventure, so I require a resupply," Elriss tells me. "Even if I hadn't used most of them, I don't have enough to help out in case the situation gets dire. So can I count on you to help me out or not?"
+
+*"What do you need?" I ask. -> AskNeeds
+*"Sorry, I can't really help you," I tell the Hero. -> RefuseNeed
+
+==RefuseNeed
+"Sorry, I can't really help you," I tell the Hero.
+
+"I really need the supplies!" Elriss snaps at me. "If you can't help me by selling them, then a lot of people are going to die!"
+
+I think about it. Do I feel like I can handle the death of innocent people on my conscious?
+
+*I sigh and relent. -> AskNeeds
+*I remain adamant. -> RefuseHero
+
+==RefuseHero
+"I have complete faith in you, Hero," I tell Elriss. "After all, you were chosen to handle this. I can help out after the attack is over, but I need to protect my shop to my best ability. Otherwise, I won't be able to help out after the attack is repelled. If it is."
+
+Elriss sighs in defeat. "Alright, I don't have time to deal with you. I'll be on my way then." The Hero soon leaves the shop, saying something in a low mutter before leaving to help the guards. I quickly move to close up shop and lock it up to provide some protection, even if it wasn't the best.
+
+-> DONE
+
+==ShelterPeople
+"Alright, alright," I tell the townsperson. "You all can come inside. But be careful with the items inside the shop.
+
+"Thank you, Shmoore," the townperson tells me, a grateful tone in his voice as the group of people he had with him come inside the shop, some of them helping me with closing and locking up the shop.
+
+-> DONE
+
+==RefusePeople
+"I'm sorry," I tell the townsperson. "While I'd love to shelter people, I don't think I have enough room in here for everyone. Especially if I want to avoid damaging my items."
+
+"But we can't survive without some help!" the townsperson pleads.
+
+That is true, ordinary townspeople aren't necessarily trained to fight monsters. But...
+
+*[Relent.] -> ShelterPeople
+*[Confirm refusal.] -> ConfirmRefusal
+
+==ConfirmRefusal
+"I'm sorry, but I need to get things locked up," I flatly say as I turn around and, going back into my shop, close and lock the door.
+
+-> DONE
