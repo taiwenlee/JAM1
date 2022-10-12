@@ -85,5 +85,29 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 
 === Conclusion == 
 //where gold, relationships, and actions matters for endings (endings are town dies, town lives, hero corrupted, hero save people, villan turn good, villan has big evil army(gem affect this))
+{
+-HeroRela >= 15:
+//good Hero
+}
+{
+-HeroRela <= 0:
+//Bad Hero
+}
+{
+-AnatgonistRela >= 12:
+//Good Villan
+}
+{
+-AnatgonistRela <= 0:
+//Bad Villan
+}
+{
+-TownRela >= 10:
+//Town Happy
+}
+{
+-TownRela >= -5:
+//TownDestoryed
+}
     -> END
 
