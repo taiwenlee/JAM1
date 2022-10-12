@@ -85,6 +85,10 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 
 === Conclusion == 
 //where gold, relationships, and actions matters for endings (endings are town dies, town lives, hero corrupted, hero save people, villan turn good, villan has big evil army(gem affect this))
+
+You have {Inventory}
+You have {Gold} gold left
+
 {
 -HeroRela >= 15:
 //good Hero
@@ -109,6 +113,20 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 - HaveMythicalRing == 1:
 //RingEnding
 }
+{
+- Gold <= 0:
+//Poorboy 
+}
+{
+- Gold > 0:
+//Keepo Managing Stall
+}
+{
+- Gold >= 500:
+//RichEnding
+}
+
+
 
 //Town is happy, If Town is not destoryed/Hero corrupt/Villain win
 //Has Cursed Weapon
