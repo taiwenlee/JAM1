@@ -2,7 +2,6 @@
 VAR bought_cursed_weapon = 0
 VAR bought_potion = 0
 VAR item_bought = false
-LIST MerchantInventory = CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 
 
 The plan is to start selling in a few minutes. I am currently organizing my wares to make sure the most appealing ones were the first things people will see when they look at the stall.
