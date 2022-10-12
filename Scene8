@@ -41,6 +41,7 @@ So, a traveling merchant, here to sell to me. Between their appearance, wheelbar
 Finally, they’re leaving. With a sigh of relief, you return to your stall to finish preparations for the day. 
 
 After they leave, a few townspeople come and thank you for driving that merchant off, claiming they bring nothing but trouble to the town. Hopefully they won't come back again...
+~ TownRela +=5
 -> MainLoop
 
 === theMerchantsWares ===
