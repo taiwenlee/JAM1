@@ -30,7 +30,7 @@ They look intently at the Magic Gem.
 
     I gasped as they started to jump over and into my shop, ransacking every corner for the gold I kept. I didn’t have the guts to fight them off but held tightly onto what they so desired. It took them only a few minutes until my place was robbed of the gold I worked really hard to earn.
     
-    ~Inventory-=gold
+    ~Gold=0
     ->MainLoop
 
 *[Haggle]
@@ -66,7 +66,7 @@ They look intently at the Magic Gem.
 
     I opened my eyes to see that 2 antidotes and the Staff of Ice was stolen from me. I sighed in disappointment. I dusted myself off and started to rearrange my items. So much for haggling 
     
-    ~Inventory-=antidotes
+    ~Inventory-=Antidotes
     ~Inventory-=StaffBlizzards
     
 ****[Take it]
