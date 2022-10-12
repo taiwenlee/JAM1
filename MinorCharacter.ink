@@ -90,19 +90,19 @@ You have {Inventory}
 You have {Gold} gold left
 
 {
--HeroRela >= 15:
+-HeroRela >= 15: The hero has saved the town and defeated all of the enemies including Drekalynch! The town is happy and celebrates!
 //good Hero
 }
 {
--HeroRela <= 0:
+-HeroRela <= 0: After making multiple mistakes, the hero slowly commits more and more atrocities. While the hero ended up defeating Drekalynch, they quickly replaced them as the new demon lord. The Kingdom issued a warrant for the hero which caused further unease in the town.
 //Bad Hero
 }
 {
--AntagonistRela >= 12:
+-AntagonistRela >= 12: The news spreads that the battle between Elrris and Drekalynch is over. Drekalynch surrendered, and disappeared. One day, a traveler comes to your store, it's Drekalynch! But instead of attacking you, he just buys a few things, acting like any friendly customer. He has begun a new life as a wandering traveler, atoning for his past deeds. He becomes one of your best customers in the future
 //Good Villan
 }
 {
--AntagonistRela <= 0:
+-AntagonistRela <= 0: News spread that the hero Elrris and any of his supporters were dead at the hands of Drekalynch with chaos spreading across Tenby, no good creature left  was safe. With no hero to stop evil, the demon was in power to control all   
 //Bad Villan
 }
 {
@@ -110,7 +110,7 @@ You have {Gold} gold left
 //TownDestroyed
 }
 {
-- HaveMythicalRing == 1:
+- HaveMythicalRing == 1: The mythical ring emits an intense blue light around me. I feel my soul being transcendent as my consciousness slowly fades away. “I am celestial…”
 //RingEnding
 }
 {
@@ -125,12 +125,10 @@ You have {Gold} gold left
 - Gold >= 500:
 //RichEnding
 }
+{
+- HaveCursedSword == 1: 
+}
 
-//Town is happy, If Town is not destoryed/Hero corrupt/Villain win
-//Has Cursed Weapon
-//Amount of Gold left (leave for rich life or be stall manager or no gold means bankrupt)
 //Magic Gem will lead to VillanBad
-//Salt will lead to ending
-//List items you have left
 -> END
 
