@@ -7,6 +7,18 @@ INCLUDE Scene6
 INCLUDE Scene7
 INCLUDE Scene8
 
+VAR Scene = 0
+VAR Gold = 1000
+VAR HeroRela = 10 //max +-20
+VAR AnatgonistRela = 0 //max +-20
+VAR TownRela = 0 //max = +-20
+VAR Healing = 10
+VAR Antidi = 5
+VAR HaveCursedSword = 0
+
+LIST Items = CursedSword, MythicalRing, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
+LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
+
 Every morning I had the same routine
 
 Get up, get ready, and place my stall in the best part of town where business was booming
@@ -40,19 +52,6 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 
 *[Continue?]
 -> Scene_1
-
-
-VAR Scene = 0
-VAR Gold = 1000
-VAR HeroRela = 10 //max +-20
-VAR AnatgonistRela = 0 //max +-20
-VAR TownRela = 0 //max = +-20
-VAR Healing = 10
-VAR Antidi = 5
-VAR HaveCursedSword = 1
-
-LIST AllItems = CursedSword, MythicalRing, MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
-LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
 
 
 === MainLoop ===
