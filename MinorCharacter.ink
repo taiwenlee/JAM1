@@ -46,6 +46,7 @@ VAR Scene = 0
 VAR Gold = 1000
 VAR HeroRela = 10 //max +-20
 VAR AnatgonistRela = 0 //max +-20
+VAR TownRela = 0 //max = +-20
 VAR Healing = 10
 VAR Antidi = 5
 LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
