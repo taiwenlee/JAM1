@@ -110,5 +110,9 @@ To buy and sell from whoever came to my stall doing my small contribution to tho
 -TownRela >= -5:
 //TownDestoryed
 }
+//Has Cursed Weapon
+//Amount of Gold left (leave for rich life or be stall manager or no gold means bankrupt)
+//Magic Gem will lead to VillanBad
+//Salt will lead to ending
     -> END
 
