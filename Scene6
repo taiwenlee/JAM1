@@ -1,7 +1,7 @@
 === Scene_6 ===
 Today, A large caravan came into town bringing many different types of people and goods. Word came around that the caravan was staying in our town for a couple of days before continuing on their expedition. Due to the influx of people, the streets are much busier than usual. The perfect time to stock up the store and earn profits.
 
-After opening up my shop for a couple of minutes, a large fellow comes by with a cart filled with weapons and armor. After a short conversation, I learn that they are a wandering blacksmith wanting to sell some of their goods to lighten up their cart. We went to their cart where he took out a couple of items and lay them out on a table.
+After opening up my stall for a couple of minutes, a large fellow comes by with a cart filled with weapons and armor. After a short conversation, I learn that they are a wandering blacksmith wanting to sell some of their goods to lighten up their cart. We went to their cart where he took out a couple of items and lay them out on a table.
 VAR CheckPurch = false
 ~temp cost = RANDOM(27,33)
 The first item on the table was a long sword. The blacksmith wanted to sell it for {cost} gold.
@@ -28,45 +28,47 @@ I have {Gold} gold.
     ~CheckPurch = true
     ->third
 *Don’t Buy.
-    I'm in no need to stock up on Short Swords. I told the blacksmith. 
+    I'm in no need to stock up on short swords. I told the blacksmith. 
     ->third
 
 =third
 The blacksmith moved on to the next item.
 ~temp cost = RANDOM(27,33)
-The first item on the table wa heavy armor. The blacksmith wanted to sell it for {cost} gold.
+The last item on the table was heavy armor. The blacksmith wanted to sell it for {cost} gold.
 I have {Gold} gold.
 *{Gold >= cost}Buy
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
-    ~Inventory += ShortSword
+    ~Inventory += HeavyArmor
     ~CheckPurch = true
     ->blacksmithDone
 *Don’t Buy.
-    I'm in no need to stock up on Short Swords. I told the blacksmith. 
+    I'm in no need to stock up on heavy armor. I told the blacksmith. 
     ->blacksmithDone
 
 =blacksmithDone
-{CheckPurch : That was all the goods that the blacksmith was offering, we finish the transaction and the blacksmith leaves the shop. | The blacksmith finishes showing all their goods but I didn’t want any of it. They angrily pack up and storms off mumbling words that I couldn’t decipher.}
+I have {Gold} gold now.
+{CheckPurch : That was all the goods that the blacksmith was offering, we finish the transaction and the blacksmith leaves the stall. | The blacksmith finishes showing all their goods but I didn’t want any of it. They angrily pack up and storms off mumbling words that I couldn’t decipher.}
 
 *[Continue to manage the store]
-30 minutes passed while I manage the store, a group of adventurers comes by and starts browsing my items on display. Two of the adventurers, a swordsman and a cleric, were causing quite a bit of disturbance as they flirt with each other without a care in the world. The swordsman looks through the swords on display and asks how much it is.
+30 minutes passed while I manage the store, a group of adventurers comes by and starts browsing my items on display. Two of the adventurers, a swordsman and a cleric, were causing quite a bit of disturbance as they flirt with each other without a care in the world. The swordsman looks through the swords on display. {Inventory has ShortSword: He asks how much the short sword is. | After looking through the swords for a bit longer, he looked rather disappointed and walked away. ->completeAdventurer}
 ->adventurer
 
 =adventurer
 *[tell him the regular price]
-    “The long sword you are looking at is 30 gold,” I told him. The swordsman looks to be thinking for a bit but the cleric interrupts him saying that he would look handsome with it. They flirt with each other for another minute to much of my annoyance but finally say he’ll buy the sword. I completed the transaction and they left along with the other adventures.
-    ~Inventory -= LongSword
-    ~Gold += 30
+    “The short sword you are looking at is 20 gold,” I told him. The swordsman looks to be thinking for a bit but the cleric interrupts him saying that he would look handsome with it. They flirt with each other for another minute to much of my annoyance but finally say he’ll buy the sword. I completed the transaction and they left along with the other adventures.
+    ~Inventory -= ShortSword
+    ~Gold += 20
     ->completeAdventurer
 *[upcharge him]
-    “That long sword will be 36 gold,” I told him. “Huh?”, the swordsman says. Clearly, he was rather offended by my pricing. He starts to complain that the prices are way too high for a shabby shop like mine. The cleric butts in saying that I should be thankful that I get customers like them. As their actions don't incline me to change the price, I stood firm on it which caused them to get angrier. Their fellow adventurers notice what was going on and came around to come them down. They finally left without buying anything.
+    “That long sword will be 36 gold,” I told him. “Huh?”, the swordsman says. Clearly, he was rather offended by my pricing. He starts to complain that the prices are way too high for a shabby stall like mine. The cleric butts in saying that I should be thankful that I get customers like them. As their actions don't incline me to change the price, I stood firm on it which caused them to get angrier. Their fellow adventurers notice what was going on and came around to come them down. They finally left without buying anything.
     ->completeAdventurer
 
 =completeAdventurer
 *[Continue to manage the store]
-The business became rather slow in the afternoon so I decided to do some inventory to pass time. As I was reorganizing the goods, a person wearing a cloak entered. They seem to be someone from the Magic Academy. They looked around for a while and seemed to have spotted something that plagued their interest. They look towards me and asked how much the item was. Upon closer inspection, the item they are looking at was the scroll of binding that I had on the side. I tell them that it cost 60 gold. They pause for a moment then spoke. “I don’t have that amount of gold on me but I could trade it for this.” they said as they hold out a gem. They explain how the gem was an item found deep in the nearby dungeon and that its purpose was unknown. There feels like there's something in it.
-    ->wizard
+The business became rather slow in the afternoon so I decided to do some inventory to pass time. As I was reorganizing the goods, a person wearing a cloak entered. They seem to be someone from the Magic Academy. {Inventory has ScrollBinding: They looked around for a while and seemed to have spotted something that plagued their interest. They look towards me and asked how much the item was. Upon closer inspection, the item they are looking at was the scroll of binding that I had on the side. I tell them that it cost 60 gold. They pause for a moment then spoke. “I don’t have that amount of gold on me but I could trade it for this.” they said as they hold out a gem. They explain how the gem was an item found deep in the nearby dungeon and that its purpose was unknown. There feels like there's something in it. ->wizard | They looked around for a while longer but left without ever touching an item. ->endScene6}
+
+->wizard
 
 =wizard
 *[Do the trade]
@@ -81,6 +83,7 @@ That's the most basic swindle move out there, there's no reason for me to take s
 The Wizard seems disappointed that I refused the trade offer and quickly left. I wonder why they wanted to get that item so much…
 ->endScene6
 =endScene6
-The sun was starting to set so I decided it was time to close the shop for the day and prepare for the next day.
+
+The sun was starting to set so I decided it was time to close the stall for the day and prepare for the next day.
 
 -> MainLoop
