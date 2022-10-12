@@ -126,8 +126,6 @@ You have {Gold} gold left
 //RichEnding
 }
 
-
-
 //Town is happy, If Town is not destoryed/Hero corrupt/Villain win
 //Has Cursed Weapon
 //Amount of Gold left (leave for rich life or be stall manager or no gold means bankrupt)
