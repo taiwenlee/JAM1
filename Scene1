@@ -81,7 +81,7 @@ I reminded him that each item needed to be bought separately
 
 === Sell2 ===
 “Put it to good use”
-~ Inventory = Inventory - LightArmor
+~ Inventory -= LightArmor
 ~ Gold = Gold + 30
 ~ HeroRela = HeroRela + 1
 
@@ -94,7 +94,7 @@ I reminded him that each item needed to be bought separately
 
 “Well what can you do about that, lots of people must need armor these days”
 
-~ Inventory = Inventory - LightArmor
+~ Inventory -= LightArmor
 ~ Gold = Gold + 50
 ~ HeroRela = HeroRela - 1
 ->EndScene

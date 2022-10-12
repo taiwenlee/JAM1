@@ -17,8 +17,7 @@ VAR Antidi = 5
 VAR HaveCursedSword = 0
 VAR HaveMythicalRing = 0
 
-LIST Items = CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
-LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
+LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (BowArrows), (HealingPotions), Antidotes, DaggerFire, StaffBlizzards, (ScrollBinding), (RecipeBook), (CrestTenby), CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 
 Every morning I had the same routine
 
