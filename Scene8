@@ -111,6 +111,7 @@ I think about everything that is being offered to me. Some of it is likely a sca
 ~ Gold -= 40 
 ~ item_bought = true
 ~ Inventory = Inventory + CursedSword
+~ HaveCursedSword = 1
 “I’ll take the sword.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket. 
 
 “Thank you, thank you so much. Here you are.” The merchant hands you the items,”Anything else?” 
