@@ -1,4 +1,4 @@
-=== Scene_7 ===
+== Scene7 ==
 I am busy checking on the items I've got left at my shop when I look out the door and at the scenery in front of me. It looks so peaceful out there...
 
 I soon get snapped out of my gaze by the sounds of some footsteps.
@@ -34,9 +34,12 @@ What to do, though...?
 ==AskNeeds
 "What do you need?" I ask.
 
-Elriss gives me a small list of things required for helping the guards. I nod in understanding and grab what was requested, soon giving them to the Hero before thesaid Hero thanks me and leaves, me taking time to close and lock up my shop in case the goblins managed to reach my area.
+Elriss gives me a small list of things required for helping the guardswhich appear to be at least three healing potions. I nod in understanding and grab what was requested, soon giving them to the Hero before said Hero thanks me and leaves, me taking time to close and lock up my shop in case the goblins managed to reach my area.
 
--> DONE
+~HeroRela = HeroRela + 3
+~Healing = Healing - 3
+
+-> MainLoop
 
 ==QuestionHero
 "Are you sure you don't already have what you need?" I ask.
@@ -61,14 +64,18 @@ I think about it. Do I feel like I can handle the death of innocent people on my
 
 Elriss sighs in defeat. "Alright, I don't have time to deal with you. I'll be on my way then." The Hero soon leaves the shop, saying something in a low mutter before leaving to help the guards. I quickly move to close up shop and lock it up to provide some protection, even if it wasn't the best.
 
--> DONE
+~HeroRela = HeroRela - 3
+
+-> MainLoop
 
 ==ShelterPeople
 "Alright, alright," I tell the townsperson. "You all can come inside. But be careful with the items inside the shop.
 
 "Thank you, Shmoore," the townperson tells me, a grateful tone in his voice as the group of people he had with him come inside the shop, some of them helping me with closing and locking up the shop.
 
--> DONE
+~TownRela = Townrela + 5
+
+-> MainLoop
 
 ==RefusePeople
 "I'm sorry," I tell the townsperson. "While I'd love to shelter people, I don't think I have enough room in here for everyone. Especially if I want to avoid damaging my items."
@@ -82,5 +89,7 @@ That is true, ordinary townspeople aren't necessarily trained to fight monsters.
 
 ==ConfirmRefusal
 "I'm sorry, but I need to get things locked up," I flatly say as I turn around and, going back into my shop, close and lock the door.
+
+~Townrela = TownRela - 5
 
 -> MainLoop
