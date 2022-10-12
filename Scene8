@@ -1,3 +1,182 @@
 === Scene_8 ===
-8
+VAR bought_cursed_weapon = 0
+VAR bought_potion = 0
+VAR item_bought = false
+LIST MerchantInventory = CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
+
+
+The plan is to start selling in a few minutes. I am currently organizing my wares to make sure the most appealing ones were the first things people will see when they look at the stall.
+
+Suddenly, I hear the dragging of something, rather slowly, making slow but constant creeks, approaching me. Looking up from my stall, there’s someone standing in front of it. 
+
+A slouching robed figure with a large pack, dragging a packed wheelbarrow covered by a carpet behind them. They look up at me, with a wide smile revealing a couple gold teeth filling their mouth. Because of their cloak, you can’t even tell their age, appearance, or gender clearly...
+
+“You’re the new merchant around here...right?” They speak slowly, as if they methodically think about every word they say,”I have some offers for you.”
+
+
+So, a traveling merchant, here to sell to me. Between their appearance, wheelbarrow, and speech, I couldn’t shake the feeling they are suspicious.
+
+* [It might not hurt to at least see what they’re selling.] -> theMerchantsWares
+* [You have plenty to sell already, no need to do business with a strange merchant like this] -> sayNoOnce
+= sayNoOnce
+“I’m not interested, I really must continue preparing my stall for the day.” You answer quickly, not wanting to get scammed or tricked by this seller.
+
+“Now, I promise it will only take a few minutes. I dragged my cart all the way here, after all. I’m not sure I’m strong enough to drag it back. Unless it’s a little lighter, you see...” The merchant pushes.
+
+* [Well, it can’t hurt you to just look at what he’s offering…] -> theMerchantsWares
+* [Him getting more pushy only makes this seem more suspicious. Don’t give him an inch and keep refusing.] -> sayNoTwice
+
+= sayNoTwice
+“In a few minutes I’ll be selling my wares to heroes and travelers. I have no time to waste with your trinkets.” 
+
+“They are no mere trinkets.” The merchant turns around, and pulls a black-hilted sword with engravings covering its blade out of his wheelbarrow. That...looked like it was worth a lot,”What I offer...no one else can.” He says, before quickly returning the sword to the wheelbarrow,”And...I’ll give you good prices.”
+
+* [Well, that sword at least does look nice enough to turn a profit. Give in and see what this merchant has to offer.] -> theMerchantsWares
+* [Turn away the merchant, you know better than to change your mind just due to one sword, everything else might be junk.] -> sayNoThrice
+
+= sayNoThrice
+“I’m not interested. Leave, now, this is my stall, and I won’t let you try to sell your goods anywhere near here.” You say firmly,”I’m not buying anything from you.”
+
+“Fine, fine. Your loss, hehehe...” With that odd laughter, the merchant turns around and pushes their cart away slowly. 
+
+Finally, they’re leaving. With a sigh of relief, you return to your stall to finish preparations for the day. 
+
+After they leave, a few townspeople come and thank you for driving that merchant off, claiming they bring nothing but trouble to the town. Hopefully they won't come back again...
+-> MainLoop
+
+=== theMerchantsWares ===
+“Fine. But this better not be a waste of my time.” I say, with a bit of a scowl on my face. 
+
+“It won’t be, I promise…” The merchant takes the carpet off the wheelbarrow, revealing a number of weapons, potions, and some other things, a number of which did look like they might be worth something,”And I’ll give you good prices. For each of these weapons…” They slowly pointed to a sword, a spear, an ax, and a dagger, all of which with engraving,“The sword costs 40 gold, the others cost 30 gold.” 
+
+“Can I feel them? I want to make sure they’re worth the gold.” I ask.
+
+“Of course, of course.” The merchant takes the sword, holding it very carefully as they hand it to you. It has good weight, and feel, the engravings look nice, although you can’t read whatever language they’re written in. It certainly seems to be high quality enough, but also…it feels special…powerful…like you could do anything if you only have it. 
+
+“Hey, are you going to keep looking at that blade, or are you going to buy it?” The merchant quickly grabbed the sword back from you and put it back into the wheelbarrow, almost as if they were being careful to not hold onto it for long. 
+
+“Sorry, it was…an impressive blade.” 
+
+“Yes, of course. Well, its not the only thing I have to offer. I also have five healing potions. 15 gold each.” Well, they are overpriced, but healing potions are often in high demand…
+
+“And also, I offer you this.” They reach into the bottom of the wheelbarrow, and pull out an old-looking leather-bound tome, with yellowed pages,”This tome has many ancient magical incantations and spells within it for any sorcerer, or anyone who needs something that only magic can offer. And you can have it for…50 gold.” 50 gold was a lot, but if that was the truth, a mage or someone desperate might buy it for even more than that. 
+
+“And last, but most important of all.” The merchant dropped their pack off their back and onto the ground with a thud, before pulling out a bunch of canned, pink…salt, “This magical salt is invaluable! It can be used for anything and everything you could imagine. And I will give you all of it, for 40 gold!” The grin from earlier had returned, but when they saw your scowl at how expensive this person was trying to sell you salt, they added,”Also, elves hate this stuff.” As if that would make it more valuable? 
+
+I think about everything that is being offered to me. Some of it is likely a scam, but perhaps I could make some use out of it or at least sell it back for a higher price? 
+
+{ Gold >= 15: 
+* [So I decide to buy…] -> BuyingScene 
+- else: * [Wait, I don't have enough gold to buy any of this!] -> notEnoughGold 
+}
+
+= notEnoughGold
+"Actually, I'm sorry, but I don't have enough gold to buy anything you're selling." I realize.
+
+“You want to buy from me, but you don't have enough gold? Hmph! So you just waste my time. Fine fine, but watch out that I don’t steal your customers. Hehehe…” And the man puts his wares away, before turning and leaving.
+
+“Good riddance.” I mutter to myself. Finally, time to get to work
+
+-> MainLoop
+
+= BuyingScene
+{ Gold >= 40:
+ * [Buy the sword for 40 gold] ->BuySword
+ }
+{ Gold >= 30:
+ { bought_cursed_weapon < 3: 
+ + [Buy another weapon for 30 gold] ->BuyWeapon
+ }
+ }
+{ Gold >= 15:
+ { bought_potion < 5: 
+ + [Buy a healing potion for 15 gold] ->BuyPotion
+ }
+ }
+{ Gold >= 50:
+ * [Buy the tome for 50 gold] ->BuyTome
+ }
+{ Gold >= 40:
+ * [Buy the salt for 40 gold] ->BuySalt
+ }
+
+{ item_bought == false: 
+* [Nothing. I need this merchant to leave as soon as possible so I can sell my own wares.] -> BuyNothing
+}
+{  item_bought == true: 
+* [That’s enough buying, I need this merchant to leave so I can sell my own wares.] ->enoughBuying 
+}
+
+= BuySword
+~ Gold -= 40 
+~ item_bought = true
+~ Inventory = Inventory + CursedSword
+“I’ll take the sword.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket. 
+
+“Thank you, thank you so much. Here you are.” The merchant hands you the items,”Anything else?” 
+-> BuyingScene
+
+= BuyWeapon
+~ Gold -= 30 
+~ item_bought = true
+~ bought_cursed_weapon +=1
+{ bought_cursed_weapon == 1:
+“I’ll take the spear.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket.
+}
+ {  bought_cursed_weapon == 2:
+“I’ll take the ax.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket.
+}
+  { bought_cursed_weapon == 3:
+  “I’ll take the dagger.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket.
+  
+}
+“Thank you, thank you so much. Here you are.” The merchant hands you the weapon,”Anything else?” 
+-> BuyingScene
+
+= BuyPotion
+~ Gold -=  15
+~ item_bought = true
+~ bought_potion +=1
+~ Healing += 1
+“I’ll take a potion.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket. (Lose amount of Gold)
+
+“Thank you, thank you so much. Here you are.” The merchant hands you a potion,”Anything else?” 
+-> BuyingScene
+
+= BuyTome
+~ Gold -= 50 
+~ item_bought = true
+~ Inventory = Inventory + Spellbook
+“I’ll take the tome.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket. 
+
+“Thank you, thank you so much. Here you are.” The merchant hands you the tome,”Anything else?” 
+-> BuyingScene
+
+= BuySalt
+~ Gold -= 40 
+~ item_bought = true
+~ Inventory = Inventory + FancySalt
+“Fine, I’ll take the salt.” You hand the merchant the gold, who hides it in their robes where you didn’t even notice a pocket. 
+
+“Thank you, thank you so much. Here you are.” The merchant hands you all the jars of salt, which you place on your stall,”Anything else?” 
+-> BuyingScene
+
+= BuyNothing
+“Actually, I see nothing worth buying. Please go, I should be open already.” I can’t trust the strange objects and prices being offered.
+
+
+“Hmph! So you just waste my time. Fine fine, but watch out that I don’t steal your customers. Hehehe…” And the man puts the salt away, before turning and leaving.
+
+“Good riddance.” I mutter to myself. Finally, time to get to work. 
+
+-> MainLoop
+
+
+= enoughBuying
+“That’s enough. I bought something, so can you please leave now? You’re in front of my stall, after all.” I figure that if I’m not forceful enough, this merchant won’t leave. 
+
+“Alright, alright.” They put their wares away,”Thank you for your business. I’m sure you will find what you have purchased…useful. Hehehe.” As they leave, you can’t help but sigh with relief. 
+
+As you place your newly acquired wares on your shelves, you hope to never see that strange merchant again…
+
 -> MainLoop
