@@ -69,7 +69,7 @@ They look intently at the Magic Gem.
     I opened my eyes to see that 2 antidotes and the Staff of Ice was stolen from me. I sighed in disappointment. I dusted myself off and started to rearrange my items. So much for haggling 
     
     ~Inventory-=antidotes
-    ~items-=staff_ice
+    ~Inventory-=StaffBlizzards
     
 ****[Take it]
     ->Taken
