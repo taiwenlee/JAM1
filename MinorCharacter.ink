@@ -15,8 +15,9 @@ VAR TownRela = 0 //max = +-20
 VAR Healing = 10
 VAR Antidi = 5
 VAR HaveCursedSword = 0
+VAR HaveMythicalRing = 0
 
-LIST Items = CursedSword, MythicalRing, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
+LIST Items = CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 LIST Inventory = MagicGem, LongSword, ShortSword, HeavyArmor, LightArmor, BowArrows, HealingPotions = 10, Antidotes = 5, DaggerFire, StaffBlizzards, ScrollBinding, RecipeBook, CrestTenby
 
 Every morning I had the same routine
