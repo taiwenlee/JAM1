@@ -43,7 +43,8 @@ I start feeling suspicious and wonder why this man wants such a old sword. Howev
 
 "Sure. The price will be 40 gold."
 
-Gold += LongSword
+~Inventory -= LongSword
+~Gold += 40
 
 "Okay, here you go." ->End_Scene
 
