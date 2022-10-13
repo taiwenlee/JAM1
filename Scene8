@@ -12,8 +12,7 @@ A slouching robed figure with a large pack, dragging a packed wheelbarrow covere
 
 “You’re the new merchant around here...right?” They speak slowly, as if they methodically think about every word they say,”I have some offers for you.”
 
-
-So, a traveling merchant, here to sell to me. Between their appearance, wheelbarrow, and speech, I couldn’t shake the feeling they are suspicious.
+I look over the traveling merchant carefully. Between their appearance, wheelbarrow, and speech, I couldn’t shake the feeling they are suspicious.
 
 * [It might not hurt to at least see what they’re selling.] -> theMerchantsWares
 * [You have plenty to sell already, no need to do business with a strange merchant like this] -> sayNoOnce
