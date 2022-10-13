@@ -20,6 +20,8 @@ VAR HaveScroll = 1
 
 LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (BowArrows), (HealingPotions), Antidotes, (DaggerFire), StaffBlizzards, (ScrollBinding), (RecipeBook), (CrestTenby), CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 
+//Why do both the Great Hero and the Demon Lord keep visiting my merchant stall?
+
 Every morning I had the same routine
 
 Get up, get ready, and place my stall in the best part of town where business was booming
