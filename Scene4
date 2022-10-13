@@ -12,8 +12,8 @@ They looked at one another, grunted, and turned back in my direction.
 
 I told them that they were free to look around at what I had to offer them today 
 
-They look intently at the Magic Gem.
-“We’d love to take that Magic Gem off your hands”
+They look intently at the Tenby Crest.
+“We’d love to take that crest off your hands”
 
 *[Don’t Sell] 
     "Sorry, this item seems to be reserved for another customer, I hope there’s another item you have in mind on buying here today!" 
@@ -22,7 +22,7 @@ They look intently at the Magic Gem.
 
     “Look, there’s nothing in our immediate interest besides that. So could you tell us the price of it?” they asked.
 
-    I shook my head in disagreement. All of them grew impatient, did they need the item this badly? I asked again if there was another item they wanted from my shop.
+    I shook my head in disagreement. All of them grew impatient, did they need it this badly? I asked again if there was another item they wanted from my shop.
 
     “NO.” their leader shouted, drawing out a small dagger from their side pocket. The rest of their gang started to do the same. 
 
@@ -34,11 +34,11 @@ They look intently at the Magic Gem.
     ->MainLoop
 
 *[Haggle]
-    “Earnings have been a little low as of late, are you willing to pay a little more for this item?” I asked.
+    “Earnings have been a little low as of late, are you willing to pay a little more for this?” I asked.
 
     The bandits look at each other once more, muttering amongst themselves and turn back to me. Their main man came up, slammed his palm upon my stand, and stared dead into my eyes. 
 
-    I glanced at the Gem they wanted and back at them. 
+    I glanced at the Crest they wanted and back at them. 
 
     “How about 120 gold?” 
 
@@ -66,7 +66,7 @@ They look intently at the Magic Gem.
 
     I opened my eyes to see that 2 antidotes and the Staff of Ice was stolen from me. I sighed in disappointment. I dusted myself off and started to rearrange my items. So much for haggling 
     
-    ~Inventory-=Antidotes
+    ~Antidi-=2
     ~Inventory-=StaffBlizzards
     
 ****[Take it]
