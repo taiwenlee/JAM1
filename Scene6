@@ -66,7 +66,7 @@ I have {Gold} gold now.
 
 =completeAdventurer
 *[Continue to manage the store]
-The business became rather slow in the afternoon so I decided to do some inventory to pass time. As I was reorganizing the goods, a person wearing a cloak entered. They seem to be someone from the Magic Academy. {Inventory has ScrollBinding: They looked around for a while and seemed to have spotted something that plagued their interest. They look towards me and asked how much the item was. Upon closer inspection, the item they are looking at was the scroll of binding that I had on the side. I tell them that it cost 60 gold. They pause for a moment then spoke. “I don’t have that amount of gold on me but I could trade it for this.” they said as they hold out a gem. They explain how the gem was an item found deep in the nearby dungeon and that its purpose was unknown. There feels like there's something in it. ->wizard | They looked around for a while longer but left without ever touching an item. ->endScene6}
+The business became rather slow in the afternoon so I decided to do some inventory to pass time. As I was reorganizing the goods, a person wearing a cloak entered. They seem to be someone from the Magic Academy. {Inventory has DaggerFire: They looked around for a while and seemed to have spotted something that plagued their interest. They look towards me and asked how much the item was. Upon closer inspection, the item they are looking at was the dagger of fire that I had on the side. I tell them that it cost 80 gold. They pause for a moment then spoke. “I don’t have that amount of gold on me but I could trade it for this.” they said as they hold out a gem. They explain how the gem was an item found deep in the nearby dungeon and that its purpose was unknown. There feels like there's something in it. ->wizard | They looked around for a while longer but left without ever touching an item. ->endScene6}
 
 ->wizard
 
@@ -74,8 +74,7 @@ The business became rather slow in the afternoon so I decided to do some invento
 *[Do the trade]
 An item that comes from deep within the dungeon must have a use. Trading it with an item that cost 60 gold seems like a good idea. I'll do the trade, I told the wizard.
 ~Inventory += MagicGem
-~Inventory -= ScrollBinding
-~HaveScroll -= 1
+~Inventory -= DaggerFire
 The wizard leave after we made the trade.
 ->endScene6
 
