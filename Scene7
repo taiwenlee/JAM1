@@ -34,10 +34,11 @@ What to do, though...?
 ==AskNeeds
 "What do you need?" I ask.
 
-Elriss gives me a small list of things required for helping the guardswhich appear to be at least three healing potions. I nod in understanding and grab what was requested, soon giving them to the Hero before said Hero thanks me and leaves, me taking time to close and lock up my shop in case the goblins managed to reach my area.
+Elriss gives me a small list of things required for helping the guardswhich appear to be at least three healing potions. I nod in understanding and grab what was requested, soon giving them to the Hero before said Hero thanks me, pays me a total of 30 gold and leaves, me taking time to close and lock up my shop in case the goblins managed to reach my area.
 
 ~HeroRela = HeroRela + 3
 ~Healing = Healing - 3
+~Gold = Gold + 30
 
 -> MainLoop
 
