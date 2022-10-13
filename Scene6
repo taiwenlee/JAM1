@@ -75,6 +75,7 @@ The business became rather slow in the afternoon so I decided to do some invento
 An item that comes from deep within the dungeon must have a use. Trading it with an item that cost 60 gold seems like a good idea. I'll do the trade, I told the wizard.
 ~Inventory += MagicGem
 ~Inventory -= ScrollBinding
+~HaveScroll -= 1
 The wizard leave after we made the trade.
 ->endScene6
 
