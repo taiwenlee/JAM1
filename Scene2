@@ -1,3 +1,158 @@
 === Scene_2 ===
-2
+
+-> Encounter
+
+=Encounter
+{
+- Gold > 1000: Wow. Business has been pretty good today. There’s a good few interesting characters in town too. For someone like me that’s fine. The more pockets full of clanking metal the better. I imagine to the right person though, these people could be trouble.
+}
+bruh
+-> Encounter1
+
+=Encounter1
+I spot a cloaked figure approaching the stand from my peripherals. I welcome them like I would anyone else.
+
+"Hi! What can I do for you today?"
+
+They respond with a dialect and awkward tone.
+
+“Uhhhh hi. I was wondering if you had any hero kil- I mean weapons. YES. WEAAPONS."
+
+They tried to cover up that first response with another. Not that it makes any difference. I hear those words dishearteningly often.
+
+"…Yeah. I got a few. What are you looking for?"
+
+“Anything powerful.”
+
+"Uhhhh I’m not too savvy on how effective these all are but…"
+
+I take out every sharp and magic-looking thing from under the counter beside me.
+
+"I came across all of these for a pretty hefty price. If you can’t match or offer something better then Your luck doesn’t lie with me."
+
+“Oh yes that’s totally fine! Totally fine! A Okay!!”
+
+"Hey you feeling okay? It is pretty hot today. I have some antidotes in the back. It’ll look bad on me if you faint in front of my stall in front of a counter full of magic artifacts."
+
+“Uhhhhh….”
+
+* [Give Antidote]
+
+~ Antidi -= 1
+~ AntagonistRela += 5
+-> Antidote
+
+* [Let Them Be]
+
+~ AntagonistRela -= 5
+-> Forward
+
+=Antidote
+The masked figure sweats profusely. As they sweat, the mask begins to slide off their face
+
+"Okay that settles it. You’re freaking me out. Just take an antidote."
+
+I dash to the back and grab an antidote from my stock and bring it back out to the counter. I see the customer quickly moving their hand away from the counter. It’s obvious what they were trying to do, but I play it cool.
+
+"Here you go."
+
+I extend my grasped hand towards theirs.
+
+“OH! Th-thank you.”
+
+They carefully slip the patch between their lips without removing their mask more than a centimeter from their face.
+
+"Okay. How do you feel now?"
+
+“Oh great. Just fantastic!... Actually, I’m feeling a LOT better. I Never expected this to work so well.”
+
+Hearing this brings me relief.
+
+"Perfect. Are you ready to actually do business?"
+
+“Oh of course! Now let’s see here. A dagger of fire, wielded by my- various orcs throughout this region; a staff of ice… These take me back! You’re a merchant with a fine eye to have all of these!”
+
+"Bro these literally just fall in my lap. I don’t even know which end to hold some of these."
+
+“Bah! You have a good selection, sure. But I need something a bit bigger than this.”
+
+I swear if they don’t buy anything after I gave them the antidote…
+
+"Bigger how? Remember I don’t even know if I showed you all my weapons. I could be carrying a mountain-leveling frog and I wouldn’t know about it."
+
+“Oh those ones are the worst! But you can’t train them so they’re useless in battle! But yes, bring out anything that looks even slightly magic to you.”
+…
+
+“I promise I have the coin!”
+
+They hold out a cow’s stomach full of jingling silver goodness.
+
+"Done."
+
+I go into the back to find what I can.
+
+*{HaveScroll == 0}[Magic Crystal: ??]
+
+~ AntagonistRela -= 3
+~ Inventory -= MagicGem
+~ Gold += 300
+-> Crystal
+
+*{HaveScroll == 1} [Scroll of Binding: 60]
+
+~ Inventory -= (ScrollBinding)
+~ Gold += 120
+~ AntagonistRela += 3
+-> Scroll
+
+
+
+=Crystal
+I grab the supposedly magic crystal and bring it to the counter.
+
+"Alright I got you a… Gem of caramel? I don’t know what this is. I said before that some of this stuff fell into my lap but this one literally did. A wizard decided this was a fair trade so I guess it's worth someth-"
+
+They hastily drop the bag of coins on the counter
+
+“I’ll take it.”
+
+"Alright! Deal!"
+
+Without saying another word the figure grabs the crystal and heads out. 
+
+"Strange… they suddenly gained a lot of confidence once I treated them. They often say some people just have colder blood than the rest of us. Heh, kinda like Mr. big bad out East. I wonder what- Oh my god that was Drekalynch Crawforanic."
+
+Welp, he just made me rich! Not much else I can do."
+->MainLoop
+
+=Scroll
+I grab one of the more torn-up scrolls from the shelf and show it to the figure.
+
+"Here. I got this. It’s a binding scroll, but I’m not sure how to activate it, I’m pretty sure you say the words like this: Crawvinch…? No. Crevalgggick!"
+
+“Please stop. You embarrass yourself. I’ll just take that.”
+
+They reach out and quickly but gently grab the scroll from my hands. This surprises me more than irks me.
+
+"Wow. You seem to be experienced."
+
+“This is a particularly strong binding scroll. The dialect is old, so not many people can read it aloud, or procure a counter-spell for it. I’m surprised you had something like this. Would you be willing to part with it for say, 120?”
+
+"Wow that’s double what I was going to charge you! You got yourself a deal."
+
+We shook hands on it and the headed on their way. I’m not entirely sure, but I think I sensed a smile under that mask. I just hope it wasn’t a shit-eating grin…
+
+->MainLoop
+
+=Forward
+I weigh my options and decide this guy isn't worth the trouble. 
+
+"Look pal, I have a business to run, and I don’t need you scaring away all my customers."
+
+“Oh… oh I see. I’m sorry. -pant- I’ll just go sit in the shade for a bit, maybe try a different shop…”
+
+"Alright. You take care now."
+
+They wobble out of my sight. I wonder what their del was, not that it matters to me.
+
 -> MainLoop

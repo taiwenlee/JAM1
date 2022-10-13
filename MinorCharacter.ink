@@ -16,6 +16,7 @@ VAR Healing = 10
 VAR Antidi = 5
 VAR HaveCursedSword = 0
 VAR HaveMythicalRing = 0
+VAR HaveScroll = 1
 
 LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (BowArrows), (HealingPotions), Antidotes, DaggerFire, StaffBlizzards, (ScrollBinding), (RecipeBook), (CrestTenby), CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 
