@@ -30,8 +30,6 @@ Right now this was in a hazardous area where many evildoers have been spotted
 
 This didn't stop me from choosing to take my business here
 
-Getting more customers willing to take their business here 
-
 This was the town of Tenby where business thrived and people from far and wide came to visit for a taste of what the town had to offer
 
 Most of this community had all types of species living together in harmony 
