@@ -106,7 +106,7 @@ You have {Gold} gold left
 //Bad Villan
 }
 {
--TownRela >= -5:
+-TownRela >= -5: I stood at the foot of my stand, staring at the crumbled down and ragged place I used to know as home. Everything was destroyed, what had gone wrong? Where was I to go now, what will my life be like beyond this point? I felt alone, defeated, as if this was through faults of my own. All hope left my body, this place will never be the same again.
 //TownDestroyed
 }
 {
