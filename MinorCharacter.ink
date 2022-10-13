@@ -18,7 +18,7 @@ VAR HaveCursedSword = 0
 VAR HaveMythicalRing = 0
 VAR HaveScroll = 1
 
-LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (BowArrows), (HealingPotions), Antidotes, DaggerFire, StaffBlizzards, (ScrollBinding), (RecipeBook), (CrestTenby), CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
+LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (BowArrows), (HealingPotions), Antidotes, (DaggerFire), StaffBlizzards, (ScrollBinding), (RecipeBook), (CrestTenby), CursedSword, CursedSpear, CursedAx, CursedDagger, Spellbook, FancySalt
 
 Every morning I had the same routine
 
@@ -115,19 +115,19 @@ You have {Gold} gold left
 //RingEnding
 }
 {
-- Gold <= 0:
+- Gold <= 0: I have lost too much to keep going with this stall, I decided to sell my stall and start a job at the (random occupation) to get back on my feet
 //Poorboy 
 }
 {
-- Gold > 0:
+- Gold > 0: Business as usual, I closed up shop for the day and prepared for another day of business tomorrow 
 //Keepo Managing Stall
 }
 {
-- Gold >= 500:
+- Gold >= 500: With the amount of money I have acquired, I have decided to take close up my stall temporarly for a life of luxury
 //RichEnding
 }
 {
-- HaveCursedSword == 1: 
+- HaveCursedSword == 1: As time passes, I grow more and more attached to the weapons I bought from the mysterious merchant. Eventually, I decide I have to start testing them out myself…at night…on unsuspecting test subjects. Nobody suspects their lovable merchant could be behind such a thing…
 }
 
 //Magic Gem will lead to VillanBad
