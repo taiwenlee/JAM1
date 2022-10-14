@@ -106,8 +106,8 @@ h2 {
 
 p {
     font-size: 12pt;
-    color:#330d00;
-    -webkit-text-stroke: .15px #9fbfdf ;
+    color: #d7ab90;
+    -webkit-text-stroke: .11px #9fbfdf ;
     line-height: 1.7em;
     font-weight: bold;
 }
@@ -165,7 +165,7 @@ img {
 */
 .choice a {
     font-size: 15pt;
-    color: #132639;
+    color: #ffa871;
 }
 
 a:hover {
