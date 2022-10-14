@@ -55,7 +55,7 @@ h2 {
     position: fixed;
     display: block;
     width: 100%;
-    background: #ffa64d;
+    background: white;
     transition: color 0.6s, background 0.6s;
     margin: 0;
     padding-top: 6px;
@@ -97,7 +97,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    background: white;
+    background: #ffa64d;
 }
 
 .switched .container {
