@@ -3,7 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    background: url(https://img.freepik.com/premium-photo/old-worn-out-paper-background-with-paint-spots-place-text_213524-690.jpg?w=2000);
+    background: #ffa64d; 
     overflow: hidden;
 }
 
@@ -219,7 +219,7 @@ img {
 */
 
 body.dark {
-    background: black;
+    background: #994d00;
     color: white;
 }
 
