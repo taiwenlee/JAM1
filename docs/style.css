@@ -3,7 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    background: #ffa64d; 
+    background: white; 
     overflow: hidden;
 }
 
@@ -31,6 +31,7 @@ h2 {
     font-weight: lighter;
     color: #BBB;
 }
+/* text color */
 
 .header {
     padding-top: 3em;
@@ -54,7 +55,7 @@ h2 {
     position: fixed;
     display: block;
     width: 100%;
-    background: white;
+    background: #ffa64d;
     transition: color 0.6s, background 0.6s;
     margin: 0;
     padding-top: 6px;
