@@ -21,13 +21,13 @@ The blacksmith moved on to the next item.
 ~temp cost = RANDOM(18,22)
 The second item on the table was a short sword. The blacksmith wanted to sell it for {cost} gold.
 I have {Gold} gold.
-*{Gold >= cost}Buy
+*{Gold >= cost}[Buy]
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
     ~Inventory += ShortSword
     ~CheckPurch = true
     ->third
-*Don’t Buy.
+*[Don’t Buy.]
     I'm in no need to stock up on short swords. I told the blacksmith. 
     ->third
 
@@ -36,19 +36,19 @@ The blacksmith moved on to the next item.
 ~temp cost = RANDOM(27,33)
 The last item on the table was heavy armor. The blacksmith wanted to sell it for {cost} gold.
 I have {Gold} gold.
-*{Gold >= cost}Buy
+*{Gold >= cost}[Buy]
     Seems like a worthy purchase. I tell the blacksmith that I am buying it.
     ~Gold -= cost
     ~Inventory += HeavyArmor
     ~CheckPurch = true
     ->blacksmithDone
-*Don’t Buy.
+*[Don’t Buy.]
     I'm in no need to stock up on heavy armor. I told the blacksmith. 
     ->blacksmithDone
 
 =blacksmithDone
-I have {Gold} gold now.
 {CheckPurch : That was all the goods that the blacksmith was offering, we finish the transaction and the blacksmith leaves the stall. | The blacksmith finishes showing all their goods but I didn’t want any of it. They angrily pack up and storms off mumbling words that I couldn’t decipher.}
+I have {Gold} gold now.
 
 *[Continue to manage the store]
 30 minutes passed while I manage the store, a group of adventurers comes by and starts browsing my items on display. Two of the adventurers, a swordsman and a cleric, were causing quite a bit of disturbance as they flirt with each other without a care in the world. The swordsman looks through the swords on display. {Inventory has ShortSword: He asks how much the short sword is. | After looking through the swords for a bit longer, he looked rather disappointed and walked away. ->completeAdventurer}
@@ -56,12 +56,12 @@ I have {Gold} gold now.
 
 =adventurer
 *[tell him the regular price]
-    “The short sword you are looking at is 20 gold,” I told him. The swordsman looks to be thinking for a bit but the cleric interrupts him saying that he would look handsome with it. They flirt with each other for another minute to much of my annoyance but finally say he’ll buy the sword. I completed the transaction and they left along with the other adventures.
+    “The short sword you are looking at is 20 gold,” I told him. The swordsman looks to be thinking for a bit but the cleric interrupts him saying that he would look handsome with it. They flirt with each other for another minute to much of my annoyance but finally said he’ll buy the sword. I completed the transaction and they left along with the other adventures.
     ~Inventory -= ShortSword
     ~Gold += 20
     ->completeAdventurer
 *[upcharge him]
-    “That long sword will be 36 gold,” I told him. “Huh?”, the swordsman says. Clearly, he was rather offended by my pricing. He starts to complain that the prices are way too high for a shabby stall like mine. The cleric butts in saying that I should be thankful that I get customers like them. As their actions don't incline me to change the price, I stood firm on it which caused them to get angrier. Their fellow adventurers notice what was going on and came around to come them down. They finally left without buying anything.
+    “That short sword will be 25 gold,” I told him. “Huh?”, the swordsman says. Clearly, he was rather offended by my pricing. He starts to complain that the prices are way too high for a shabby stall like mine. The cleric butts in saying that I should be thankful that I get customers like them. As their actions don't incline me to change the price, I stood firm on it which caused them to get angrier. Their fellow adventurers notice what was going on and came around to come them down. They finally left without buying anything.
     ->completeAdventurer
 
 =completeAdventurer
@@ -72,7 +72,7 @@ The business became rather slow in the afternoon so I decided to do some invento
 
 =wizard
 *[Do the trade]
-An item that comes from deep within the dungeon must have a use. Trading it with an item that cost 60 gold seems like a good idea. I'll do the trade, I told the wizard.
+An item that comes from deep within the dungeon must have a use. Trading it with an item that cost 80 gold seems like a good idea. I'll do the trade, I told the wizard.
 ~Inventory += MagicGem
 ~Inventory -= DaggerFire
 The wizard leave after we made the trade.
