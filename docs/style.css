@@ -3,7 +3,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
-    background: white; 
+    background: url(https://live.staticflickr.com/4008/4645077417_40b16cdbfc_b.jpg); 
     overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ h2 {
     font-style: italic;
     font-family: sans-serif;
     font-weight: lighter;
-    color: #BBB;
+    color: rgb(255, 153, 51);
 }
 /* text color */
 
@@ -97,7 +97,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    background: #ffa64d;
+    background: url(https://i.pinimg.com/originals/8f/b0/7d/8fb07d1d8660048cc089a07047e7e77d.jpg);
 }
 
 .switched .container {
@@ -105,15 +105,16 @@ h2 {
 }
 
 p {
-    font-size: 13pt;
-    color: #888;
+    font-size: 12pt;
+    text-align: center;
+    color: rgb(15, 31, 61);
     line-height: 1.7em;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 a {
-    font-weight: 700;
-    color: #b97c2c;
+    font-weight: bolder;
+    color: #3d3d29;
     font-family: sans-serif;
     transition: color 0.6s;
     text-decoration: none;
@@ -220,16 +221,16 @@ img {
 */
 
 body.dark {
-    background: #994d00;
-    color: white;
+    background: url(https://live.staticflickr.com/4008/4645077417_40b16cdbfc_b.jpg);
+    color: black;
 }
 
 .dark h2 {
-    color: #666;
+    color: rgb(255, 153, 51);
 }
 
 .dark .container {
-    background: black;
+    background: url(https://i.pinimg.com/originals/8f/b0/7d/8fb07d1d8660048cc089a07047e7e77d.jpg);
 }
 
 .dark .written-in-ink {
@@ -237,8 +238,9 @@ body.dark {
 }
 
 .dark a {
-    color: #cc8f1a;
+    color: #3d3d29;
     transition: color 0.6s;
+    font-weight: bolder;
 }
 
 .dark a:hover {
