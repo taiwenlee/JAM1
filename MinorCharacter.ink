@@ -22,33 +22,33 @@ LIST Inventory = MagicGem, (LongSword), ShortSword, HeavyArmor, (LightArmor), (B
 
 //Why do both the Great Hero and the Demon Lord keep visiting my merchant stall?
 
-Every morning I had the same routine
+Every morning I have the same routine
 
 Get up, get ready, and place my stall in the best part of town where business was booming
 
-Right now this was in a hazardous area where many evildoers have been spotted
+Right now this is a hazardous area where many evildoers have been spotted
 
 This didn't stop me from choosing to take my business here
 
-This was the town of Tenby where business thrived and people from far and wide came to visit for a taste of what the town had to offer
+This was the town of Tenby where people from far and wide came to visit for a taste of what the town had to offer
 
-Most of this community had all types of species living together in harmony 
+This place had all types of species living together in harmony 
 
 But not all wanted harmony 
 
-I was but a simple trader of goods finding my stock to be quite high quality compared to most 
+I am but a simple trader of goods finding my stock to be quite high quality compared to most 
 
-Many of my customers were local folk but once in a while I got a new customer looking for something rare 
+Many of my customers are local folk but once in a while I get a new customer looking for something rare 
 
-Not long ago two names came into popularity with rumors spreading of their individual achievements 
+Not long ago rumors spread of two names with news spreading of their individual achievements 
 
-A hero going by the name Elrris who has saved many lives and fought with many different adventures bringing peace to many lands including our own
+A hero going by the name Elrris who has saved many lives and fought many creatures bringing temporary peace 
 
-The other was a villain going by Drekalynch who was said to be the spawn of a demon, he has done many evil deeds hiding in the shadows as his power grows and his plans for world domination continued
+The other is a villain named Drekalynch who is said to be the spawn of a demon, he has done many evil deeds hiding in the shadows as his power grows and his plans for world domination continue
 
-These two were at odds but the goodness of the hero outweighed the evil of the demon for now 
+These two were at odds but the goodness of the hero outweighed the evil of the demon...for now 
 
- I had no part to play in their stories, I had my own and it was a simple one 
+ I have no part to play in their stories, I had my own and it was a simple one 
 To buy and sell from whoever came to my stall doing my small contribution to those that required my services
 
 *[Continue?]
